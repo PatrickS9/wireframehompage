@@ -1,0 +1,174 @@
+html, body{
+    margin: 0px;
+    height: 100%;
+}
+.layout{
+    display: grid;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    gap: 10px;
+    grid-template-areas: 
+    " a a a a a a b b b b b b "
+    " c c c c c c c c c c c c " 
+    " c c c c c c c c c c c c "
+    " d d d d e e e e f f f f "
+    " g g g h h h i i i j j j"
+    ;
+}
+
+.layout > div{
+    background-size: cover;
+}
+
+.a{
+    background-color: rgb(255, 0, 0);
+    grid-area: a;
+    background-image: url('6e3160faf833b7975de0e21ceb06ccd736a5c0bf_hq.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+}
+
+.b{
+    grid-area: b;
+    background-color: rgb(58, 24, 12);
+    background-image: url('1527346666_image.jpg');
+    background-position-y: 40%;
+}
+
+.c{
+    background: url('Deku.jpg');
+    grid-area: c;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 20%;
+    background-color: rgb(52, 31, 128);
+
+}
+
+.d{
+    background: rgb(37, 139, 68);
+    grid-area: d;
+    background-image: url('izuku.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+
+}
+
+.e{
+    background-color: rgb(40, 151, 118);
+    grid-area: e;
+    background-image: url('main-qimg-c1b287bd0f72c0fa42a609fd80d2ad9c.jfif');
+
+}
+
+.f{
+    background-color: rgb(13, 92, 122);
+    grid-area: f;
+    background-image: url('my-hero-academia.jpg');
+    background-position-y: 20%;
+}
+.g{
+    grid-area: g;
+    background-color: rgb(92, 12, 56);
+    background-image: url('my-hero-academia-1015617-1280x0.jpg');
+    background-position-y: 30%;
+}
+
+.h{
+    grid-area: h;
+    background-color: rgb(70, 124, 39);
+    background-image: url('My-Hero-Academia-best-anime-on-Hulu-840x470.jpg');
+    background-position-y: 40%;
+
+}
+
+.i{
+    grid-area: i;
+    background-color: rgb(136, 158, 38);
+    background-image: url('my-hero-academia-heroes-rising-social-1200x675.jpg');
+    background-position-y: 60%;
+}
+
+.j{
+    grid-area: j;
+    background-color: rgb(143, 130, 17);
+    background-image: url('ply0947_fall_reviews_2019_tv_anime.jpg');
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    .layout{
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h'
+        'i'
+        'j'
+        ;
+    }
+    .layout > div{
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h'
+        'i'
+        'j'
+        ;
+
+    }
+
+    .layout > div{
+        min-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h'
+        'i'
+        'j'
+        ;
+
+    }
+
+    .layout > div{
+        min-height: 150px;
+    }
+}
